@@ -297,3 +297,28 @@ footer a {
     padding: 0 20em;
   }
 }
+
+@media print {
+  body {
+    background-image: none;
+  }
+
+  header,
+  .video-novità,
+  aside,
+  footer {
+    display: none;
+  }
+
+  main {
+    box-shadow: unset;
+  }
+
+  table {
+    width: 70%;
+    margin: 1em auto 0;
+  }
+  thead tr {
+    background-color: #3f6bca;
+  }
+}
